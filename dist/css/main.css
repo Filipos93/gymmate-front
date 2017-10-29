@@ -6840,6 +6840,9 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+html {
+  font-size: 16px; }
+
 a:hover, a:active, a:focus {
   text-decoration: none;
   outline: none; }
@@ -6852,7 +6855,8 @@ a:hover, a:active, a:focus {
   color: #fff;
   border-radius: 0;
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border: none; }
   .btn.btn-success.back {
     width: 170px; }
   .btn.btn-success:focus {
@@ -6959,7 +6963,12 @@ header {
   padding: 30px;
   margin-top: 30px; }
   .window h1 {
-    margin-bottom: 30px; }
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .window h2 {
+    font-size: 18px;
+    color: #9e9e9e;
+    font-weight: 300; }
   .window .excercise {
     margin-bottom: 1rem; }
     .window .excercise.unfolded .inner .table-wrapper, .window .excercise.new .inner .table-wrapper {
@@ -7019,5 +7028,14 @@ header {
             font-weight: 700;
             width: 100%;
             background: #03aa34; }
+
+.charts .excercises {
+  margin-top: 1.25rem; }
+  .charts .excercises button {
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 0.625rem; }
+    .charts .excercises button:last-child {
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */
