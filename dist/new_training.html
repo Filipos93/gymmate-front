@@ -28,22 +28,25 @@
 
 		<header>
 			<div class="container">
-				<div class="logo col-lg-10">
+				<a class="logo col-lg-10" href="index.html">
 					<h1>Gym Mate</h1>
-				</div>
+				</a>
 			</div>
 		</header>
 		
-		<section class="tiles container">
+		<section class="container d-flex justify-content-center">
 			<div class="col-lg-10">
 				<div class="row">
-					<a href="index.html" class="btn btn-success back"><span class="fa fa-chevron-left mr-2"></span>Back</a>
+					<a href="index.html" class="btn btn-success back">
+						<span class="fa fa-chevron-left mr-2"></span>Back
+					</a>
 				</div>
 				<div class="window row">
 					<div class="col-12">
-						<h1>Add new training</h1>
+						<h1>New training</h1>
+						<h2>Add an excercise</h2>
 					</div>
-					<div class="col-12 d-flex align-items-center">
+					<div class="col-12 d-flex align-items-center mb-4">
 						<form action="">
 							<select name="" id="new-training-select">
 								<option value="" disabled selected hidden>Choose...</option>
@@ -57,6 +60,172 @@
 						<span class="mx-3">or</span>
 						<a href="" class="btn btn-success">Create new</a>
 					</div>
+
+					<div class="excercise new col-12">
+						<div class="inner">
+							<div class="name">
+								<input type="text" placeholder="Name your new excercise">
+							</div>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Serie</th>
+											<th>Weight</th>
+											<th>Reps</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td><input type="text"></td>
+											<td><input type="text"></td>
+											<td class="confirm">
+												<button class="btn btn-success">
+													<span class="fa fa-check"></span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>100kg</td>
+											<td>5</td>
+											<td class="edit">
+												<button class="btn btn-success">
+													<span class="fa fa-pencil-square-o"></span>
+												</button>
+											</td>
+											<td class="delete">
+												<button class="btn btn-success">
+													<span class="fa fa-times"></span>
+												</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>120kg</td>
+											<td>5</td>
+											<td class="edit">
+												<button class="btn btn-success">
+													<span class="fa fa-pencil-square-o"></span>
+												</button>
+											</td>
+											<td class="delete">
+												<button class="btn btn-success">
+													<span class="fa fa-times"></span>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="save-excercise">
+									<button class="btn btn-success">Save</button>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /.excercise -->
+
+					<div class="excercise col-12">
+						<div class="inner">
+							<p class="name">Bench press</p>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Serie</th>
+											<th>Weight</th>
+											<th>Reps</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>90kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>100kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>120kg</td>
+											<td>5</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div> <!-- /.excercise -->
+
+					<div class="excercise col-12">
+						<div class="inner">
+							<p class="name">Squats</p>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Serie</th>
+											<th>Weight</th>
+											<th>Reps</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>90kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>100kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>120kg</td>
+											<td>5</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div> <!-- /.excercise -->
+
+					<div class="excercise col-12">
+						<div class="inner">
+							<p class="name">Push press</p>
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Serie</th>
+											<th>Weight</th>
+											<th>Reps</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>90kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>100kg</td>
+											<td>5</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>120kg</td>
+											<td>5</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div> <!-- /.excercise -->
 				</div>
 			</div>
 		</section>

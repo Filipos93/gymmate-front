@@ -54,6 +54,11 @@ a{
 		border-radius: 0;
 		height: 41px;
 		width: 40px;
+		transition: all 300ms ease;
+
+		&:hover{
+			background: darken($primary-color, 10%);
+		}
 
 		b{
 			border-color: #fff transparent transparent transparent;
@@ -67,56 +72,57 @@ header{
 	padding: 40px;
 	padding-top: 40px;
 	padding-top: 100px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 
 	.container{
 		display: flex;
 		justify-content: center;
 
 		.logo{
-			color: $secondary-color;
-			font-weight: 700;
-			letter-spacing: -4px;
+
+			h1{
+				transition: all 300ms ease;
+				color: $secondary-color;
+				font-weight: 700;
+				letter-spacing: -4px;
+				text-shadow: 3px 3px 2px rgba(0,0,0,0.3);
+			}
 		}
 	}
 }
 
-.tiles{
+.tile{
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	margin-bottom: 30px;
+	background: $primary-color;
+	color: $secondary-color;
+	height: 120px;
+	box-shadow: 2px 2px 2px rgba(0,0,0, 0.3);
+	transition: all 300ms ease;
 
-	.tile{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+	&:hover{
+		cursor: pointer;
+		background: darken($primary-color, 10%);
+		color: $primary-color;
+		box-shadow: none;
+	}
+
+	&:active{
 		position: relative;
-		margin-bottom: 30px;
-		background: $primary-color;
-		color: $secondary-color;
-		height: 120px;
-		box-shadow: 2px 2px 2px rgba(0,0,0, 0.3);
-		transition: all 300ms ease;
+		left: 1px;
+		top: 1px;
+	}
 
-		&:hover{
-			cursor: pointer;
-			background: darken($primary-color, 10%);
-			color: $primary-color;
-			box-shadow: none;
-		}
+	span:before{
+		font-size: 45px;
+	}
 
-		&:active{
-			position: relative;
-			left: 1px;
-			top: 1px;
-		}
+	.desc{
 
-		span:before{
-			font-size: 45px;
-		}
-
-		.desc{
-
-		}
 	}
 }
 
@@ -130,4 +136,102 @@ header{
 	h1{
 		margin-bottom: 30px;
 	}
+
+	.excercise{
+		margin-bottom: 1rem;
+
+		&.unfolded, &.new{
+
+			.inner .table-wrapper{
+				max-height: 999px;
+			}
+		}
+
+		&:not(.new){
+
+			.inner{
+
+				.name{
+
+					&:hover{
+						cursor: pointer;
+						background: lighten($primary-color, 5%);
+					}
+				}
+			}
+		}
+
+		.inner{
+			border: 1px solid #e9ecef;
+			border-radius: 7px 7px 0 0;
+			overflow: hidden;
+
+			.name{
+				transition: all 300ms ease;
+				background: $primary-color;
+				color: #fff;
+				padding: 10px;
+				font-weight: 700;
+				border-radius: 5px 5px 0 0;
+				margin-bottom: 0;
+
+				input{
+					background: $secondary-color;
+					border: 1px solid $black;
+					color: $black;
+					padding-left: 8px;
+					font-weight: 400;
+				}
+			}
+
+			.table-wrapper{
+				transition: all 300ms ease;
+				max-height: 0;
+
+				.table{
+					margin-bottom: 0;
+
+					tr{
+						position: relative;
+
+						td.confirm, td.delete, td.edit{
+							border-top: none;
+						}
+
+						td.confirm, td.delete{
+							position: absolute;
+							right: 0px;
+						}
+
+						td.edit{
+							position: absolute;
+							right: 50px;
+						}
+
+						td.edit, td.delete{
+							top: -10px;
+						}
+					}
+
+					input{
+						width: 60px;
+					}
+				}
+
+				.save-excercise{
+					display: flex;
+					justify-content: flex-end;
+					padding: 7px;
+					border-top: 1px solid #e9ecef;
+
+					.btn.btn-success{
+						font-weight: 700;
+						width: 100%;
+						background: #03aa34;
+					}
+				}
+			}
+		}
+	}
+
 }
