@@ -7029,6 +7029,49 @@ header {
             width: 100%;
             background: #03aa34; }
 
+.training {
+  border: 1px solid #ededed;
+  background: #fff;
+  padding: 0;
+  border-radius: 6px 6px 0 0;
+  max-height: 46px;
+  oveflow: hidden;
+  margin-bottom: 1rem; }
+  .training:last-child {
+    margin-bottom: 0; }
+  .training.unfolded {
+    max-height: 5000px; }
+    .training.unfolded .excercise {
+      display: block; }
+  .training .excercise {
+    display: none; }
+  .training .training-header {
+    border: 1px solid #e9ecef;
+    border-radius: 7px 7px 0 0;
+    overflow: hidden;
+    margin-bottom: 1rem; }
+    .training .training-header:hover {
+      cursor: pointer; }
+      .training .training-header:hover .header-inner {
+        background: #0094c9; }
+    .training .training-header .header-inner {
+      -webkit-transition: all 300ms ease;
+      transition: all 300ms ease;
+      background: #0081af;
+      color: #fff;
+      padding: 10px;
+      font-weight: 700;
+      border-radius: 5px 5px 0 0;
+      margin-bottom: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .training .training-header .header-inner p {
+        margin-bottom: 0; }
+
 .charts .excercises {
   margin-top: 1.25rem; }
   .charts .excercises button {

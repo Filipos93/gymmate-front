@@ -247,6 +247,64 @@ header{
 	}
 }
 
+.training{
+	border: 1px solid #ededed;
+	background: $secondary-color;
+	padding: 0;
+	border-radius: 6px 6px 0 0;
+	max-height: 46px;
+	oveflow: hidden;
+	margin-bottom: 1rem;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	&.unfolded{
+		max-height: 5000px;
+
+		.excercise{
+			display: block;
+		}
+	}
+
+	.excercise{
+		display: none;
+	}
+
+
+	.training-header{
+		border: 1px solid #e9ecef;
+		border-radius: 7px 7px 0 0;
+		overflow: hidden;
+		margin-bottom: 1rem;
+
+		&:hover{
+			cursor: pointer;
+			
+			.header-inner{
+				background: lighten($primary-color, 5%);
+			}
+		}
+
+		.header-inner{
+			transition: all 300ms ease;
+			background: $primary-color;
+			color: #fff;
+			padding: 10px;
+			font-weight: 700;
+			border-radius: 5px 5px 0 0;
+			margin-bottom: 0;
+			display: flex;
+			justify-content: space-between;
+
+			p{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
 .charts{
 
 	.excercises{

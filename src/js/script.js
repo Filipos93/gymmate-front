@@ -11,6 +11,11 @@ $(function(){
 		$(this).parent().parent().toggleClass('unfolded');
 	});
 
+	// unfold and fold training
+	$('.training').children('.training-header').click(function(){
+		$(this).parent().toggleClass('unfolded');
+	});
+
 	// chart
 	let ctx = document.getElementById('chart').getContext('2d');
 	let chart = new Chart(ctx, {
